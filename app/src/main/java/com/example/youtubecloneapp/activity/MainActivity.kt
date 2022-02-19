@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var rvFilter: RecyclerView
     private lateinit var rvVideo: RecyclerView
+    private var index: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initViews() {
+        index = (1..5).random()
         rvFilter = findViewById(R.id.rv_filter)
         rvVideo = findViewById(R.id.rv_videos)
 
@@ -48,7 +50,6 @@ class MainActivity : AppCompatActivity() {
             shorts.add(Shorts(R.drawable.img_profile))
             shorts.add(Shorts(R.drawable.img_shorts_2))
         }
-        val index = (1..10).random()
 
         val feeds = ArrayList<Feed>()
         for (i in 0..10) {
