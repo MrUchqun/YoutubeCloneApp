@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="4dp"
+    android:layout_marginVertical="7dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_rounded_filter"
+            android:gravity="center"
+            android:clickable="true"
+            android:paddingHorizontal="10dp"
+           android:paddingVertical="5dp"
+            android:text="Computer"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>
